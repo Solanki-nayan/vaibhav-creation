@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaibhav Creation – Affordable Ethnic Fashion in Ahmedabad</title>
+<meta name="description" content="Vaibhav Creation – Ahmedabad's trusted ethnic wear store. Shop Men's Kurtas, Women's Ethnic Wear, Festive Wear & Kids Clothing. Affordable prices, quality fabrics.">
+<meta name="keywords" content="Clothing Store in Ahmedabad, Kurta Shop in Ahmedabad, Ethnic Wear Store Ahmedabad, Affordable Fashion Store Ahmedabad, Festive Wear Shop Ahmedabad">
+<meta property="og:title" content="Vaibhav Creation – Affordable Ethnic Fashion">
+<meta property="og:description" content="Your go-to store for ethnic fashion in Ahmedabad">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron: #E8742A;
+    --deep-maroon: #6B1A2A;
+    --gold: #C9963A;
+    --gold-light: #F0D090;
+    --cream: #FBF6EE;
+    --charcoal: #1C1410;
+    --warm-gray: #8A7A6E;
+    --white: #FFFFFF;
+    --card-bg: #FFF9F0;
+    --border: rgba(201,150,58,0.2);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    overflow-x: hidden;
+  }
+
+  /* ── NOISE TEXTURE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 9999;
+    opacity: 0.4;
+  }
+
+  /* ── TYPOGRAPHY ── */
+  h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+  h1 { font-size: clamp(2.8rem, 7vw, 5.5rem); line-height: 1.05; font-weight: 600; }
+  h2 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.1; font-weight: 600; }
+  h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 600; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(251,246,238,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow 0.3s;
+  }
+  nav.scrolled { box-shadow: 0 4px 30px rgba(107,26,42,0.08); }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; font-weight: 700;
+    color: var(--deep-maroon);
+    text-decoration: none;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .nav-logo span { color: var(--saffron); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--charcoal); font-size: 0.9rem;
+    font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;
+    transition: color 0.2s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: ''; position: absolute; bottom: -3px; left: 0; right: 0;
+    height: 1px; background: var(--saffron); transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .nav-links a:hover { color: var(--saffron); }
+  .nav-links a:hover::after { transform: scaleX(1); }
+  .nav-cta {
+    background: var(--deep-maroon); color: white !important;
+    padding: 0.5rem 1.2rem; border-radius: 2px;
+  }
+  .nav-cta::after { display: none !important; }
+  .nav-cta:hover { background: var(--saffron) !important; color: white !important; }
+
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+  .hamburger span { width: 24px; height: 2px; background: var(--charcoal); transition: 0.3s; display: block; }
+
+  /* ── HERO ── */
+  #home {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding: 6rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: 
+      radial-gradient(ellipse at 70% 50%, rgba(232,116,42,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 20% 80%, rgba(107,26,42,0.06) 0%, transparent 50%),
+      var(--cream);
+  }
+  .hero-pattern {
+    position: absolute; right: -100px; top: 50%; transform: translateY(-50%);
+    width: 600px; height: 600px; opacity: 0.07;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236B1A2A' fill-rule='evenodd'%3E%3Cpath d='M40 0L80 40L40 80L0 40z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-inner {
+    position: relative; max-width: 1200px; margin: 0 auto; width: 100%;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(201,150,58,0.12); border: 1px solid var(--gold);
+    padding: 0.4rem 1rem; border-radius: 20px;
+    font-size: 0.8rem; font-weight: 500; color: var(--gold);
+    letter-spacing: 0.1em; text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease both;
+  }
+  .hero-title {
+    animation: fadeInUp 0.6s 0.1s ease both;
+    margin-bottom: 1.5rem;
+  }
+  .hero-title em { font-style: italic; color: var(--saffron); }
+  .hero-tagline {
+    font-size: 1.1rem; color: var(--warm-gray); line-height: 1.7;
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 0.6s 0.2s ease both;
+  }
+  .hero-actions {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    animation: fadeInUp 0.6s 0.3s ease both;
+  }
+  .btn-primary {
+    background: var(--deep-maroon); color: white;
+    padding: 0.85rem 2rem; text-decoration: none;
+    font-size: 0.9rem; font-weight: 600; letter-spacing: 0.05em;
+    text-transform: uppercase; border-radius: 2px;
+    transition: all 0.3s; border: 2px solid var(--deep-maroon);
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .btn-primary:hover { background: var(--saffron); border-color: var(--saffron); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,116,42,0.3); }
+  .btn-secondary {
+    background: transparent; color: var(--deep-maroon);
+    padding: 0.85rem 2rem; text-decoration: none;
+    font-size: 0.9rem; font-weight: 600; letter-spacing: 0.05em;
+    text-transform: uppercase; border-radius: 2px;
+    transition: all 0.3s; border: 2px solid var(--deep-maroon);
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .btn-secondary:hover { background: var(--deep-maroon); color: white; transform: translateY(-2px); }
+
+  .hero-stats {
+    display: flex; gap: 2rem; margin-top: 3rem;
+    animation: fadeInUp 0.6s 0.4s ease both;
+    padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .stat-item { text-align: center; }
+  .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: var(--deep-maroon); display: block; }
+  .stat-label { font-size: 0.75rem; color: var(--warm-gray); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  .hero-visual {
+    position: relative;
+    animation: fadeInRight 0.8s 0.2s ease both;
+  }
+  .hero-card-main {
+    background: linear-gradient(135deg, var(--deep-maroon), #3A0D18);
+    border-radius: 8px; padding: 3rem 2rem;
+    text-align: center; color: white;
+    position: relative; overflow: hidden;
+    box-shadow: 0 30px 80px rgba(107,26,42,0.3);
+  }
+  .hero-card-main::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9963A' fill-opacity='0.08'%3E%3Cpath d='M30 0L60 30L30 60L0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-icon { font-size: 5rem; margin-bottom: 1rem; }
+  .hero-card-main h3 { font-size: 1.8rem; color: var(--gold-light); margin-bottom: 0.5rem; }
+  .hero-card-main p { opacity: 0.8; font-size: 0.95rem; line-height: 1.6; }
+  .hero-card-badge {
+    position: absolute; top: -12px; right: 20px;
+    background: var(--saffron); color: white;
+    padding: 0.4rem 1rem; border-radius: 20px;
+    font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .hero-tag-list {
+    display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; justify-content: center;
+  }
+  .hero-tag {
+    background: rgba(201,150,58,0.15); border: 1px solid rgba(201,150,58,0.3);
+    color: var(--gold-light); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem;
+  }
+  .hero-float-card {
+    position: absolute; bottom: -20px; left: -30px;
+    background: white; border-radius: 8px; padding: 1rem 1.2rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    display: flex; align-items: center; gap: 0.8rem;
+    font-size: 0.85rem;
+  }
+  .float-icon { font-size: 1.8rem; }
+  .float-text strong { display: block; color: var(--deep-maroon); font-size: 0.9rem; }
+  .float-text span { color: var(--warm-gray); font-size: 0.78rem; }
+
+  /* ── SECTION SHARED ── */
+  section { padding: 6rem 2rem; }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  .section-eyebrow {
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--saffron);
+    margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 0.7rem;
+  }
+  .section-eyebrow::before, .section-eyebrow::after {
+    content: ''; flex: none; width: 30px; height: 1px; background: var(--saffron);
+  }
+  .section-eyebrow::before { display: none; }
+  .section-title { margin-bottom: 1rem; }
+  .section-subtitle { color: var(--warm-gray); font-size: 1rem; line-height: 1.7; max-width: 560px; }
+
+  .divider {
+    width: 60px; height: 3px;
+    background: linear-gradient(90deg, var(--saffron), var(--gold));
+    margin: 1.5rem 0;
+  }
+
+  /* ── COLLECTIONS ── */
+  #collections { background: white; }
+  .collections-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem; }
+  .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .collection-card {
+    position: relative; border-radius: 6px; overflow: hidden;
+    cursor: pointer; transition: transform 0.4s, box-shadow 0.4s;
+    aspect-ratio: 3/4;
+  }
+  .collection-card:first-child { grid-row: span 2; aspect-ratio: auto; }
+  .collection-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+  .cc-bg {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 6rem;
+    transition: transform 0.5s;
+  }
+  .collection-card:hover .cc-bg { transform: scale(1.05); }
+  .cc-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(28,20,16,0.85) 40%, transparent 70%);
+  }
+  .cc-info {
+    position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem;
+    color: white;
+  }
+  .cc-tag {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em;
+    color: var(--gold-light); margin-bottom: 0.4rem;
+  }
+  .cc-name { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .cc-sub { font-size: 0.8rem; opacity: 0.8; }
+
+  .cc-1 .cc-bg { background: linear-gradient(135deg, #2D1B69, #1A3A5C); }
+  .cc-2 .cc-bg { background: linear-gradient(135deg, #5C1A1A, #8B4513); }
+  .cc-3 .cc-bg { background: linear-gradient(135deg, #1A4A2E, #2D5016); }
+  .cc-4 .cc-bg { background: linear-gradient(135deg, #4A1A5C, #8B1A8B); }
+  .cc-5 .cc-bg { background: linear-gradient(135deg, #5C3A1A, #8B6914); }
+
+  /* ── WHY CHOOSE US ── */
+  #why { background: var(--cream); }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+    margin-top: 3rem;
+  }
+  .why-card {
+    background: white; border: 1px solid var(--border);
+    padding: 2.5rem 2rem; border-radius: 6px;
+    transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .why-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--saffron), var(--gold));
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .why-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(107,26,42,0.1); }
+  .why-card:hover::before { transform: scaleX(1); }
+  .why-icon { font-size: 2.5rem; margin-bottom: 1.2rem; }
+  .why-card h3 { margin-bottom: 0.7rem; font-size: 1.2rem; }
+  .why-card p { color: var(--warm-gray); font-size: 0.9rem; line-height: 1.7; }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials { background: var(--deep-maroon); color: white; position: relative; overflow: hidden; }
+  #testimonials::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C9963A' fill-opacity='0.04'%3E%3Cpath d='M40 0L80 40L40 80L0 40z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  .testimonials-header { position: relative; }
+  .testimonials-header .section-eyebrow { color: var(--gold-light); }
+  .testimonials-header .section-eyebrow::before, .testimonials-header .section-eyebrow::after { background: var(--gold-light); }
+  .testimonials-header h2 { color: white; }
+  .rating-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(201,150,58,0.15); border: 1px solid rgba(201,150,58,0.3);
+    padding: 0.5rem 1.2rem; border-radius: 4px; margin-top: 1rem;
+    color: var(--gold-light); font-size: 0.9rem;
+  }
+  .stars { color: var(--gold); }
+  .testimonial-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+    margin-top: 3.5rem; position: relative;
+  }
+  .t-card {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(201,150,58,0.2);
+    border-radius: 6px; padding: 2rem; transition: all 0.3s;
+  }
+  .t-card:hover { background: rgba(255,255,255,0.09); transform: translateY(-3px); }
+  .t-quote { font-size: 3rem; color: var(--gold); line-height: 1; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; }
+  .t-text { font-size: 1rem; line-height: 1.7; color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; font-style: italic; }
+  .t-author { display: flex; align-items: center; gap: 0.8rem; }
+  .t-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--saffron), var(--gold)); display: flex; align-items: center; justify-content: center; font-weight: 700; color: white; font-size: 1rem; flex-shrink: 0; }
+  .t-name { font-weight: 600; color: var(--gold-light); font-size: 0.95rem; }
+  .t-source { font-size: 0.75rem; color: rgba(255,255,255,0.5); }
+
+  /* ── ABOUT ── */
+  #about {
+    background: white;
+  }
+  .about-inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;
+  }
+  .about-visual { position: relative; }
+  .about-main-card {
+    background: linear-gradient(135deg, var(--saffron) 0%, var(--deep-maroon) 100%);
+    border-radius: 8px; padding: 4rem 3rem; color: white; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .about-main-card::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='white' fill-opacity='0.05'%3E%3Cpath d='M30 0L60 30L30 60L0 30z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  .about-main-card .big-icon { font-size: 6rem; margin-bottom: 1rem; }
+  .about-main-card h3 { font-size: 2rem; margin-bottom: 0.5rem; }
+  .about-main-card p { opacity: 0.9; line-height: 1.6; }
+  .about-float {
+    position: absolute; top: -20px; right: -20px;
+    background: white; border-radius: 8px; padding: 1rem 1.2rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    text-align: center; min-width: 130px;
+  }
+  .about-float strong { display: block; font-size: 1.8rem; font-family: 'Cormorant Garamond', serif; color: var(--deep-maroon); }
+  .about-float span { font-size: 0.75rem; color: var(--warm-gray); }
+  .about-content p { color: var(--warm-gray); line-height: 1.8; margin-bottom: 1rem; }
+  .about-list { list-style: none; margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; }
+  .about-list li {
+    display: flex; align-items: flex-start; gap: 0.8rem;
+    font-size: 0.95rem; color: var(--charcoal);
+  }
+  .about-list li::before { content: '✦'; color: var(--saffron); flex-shrink: 0; font-size: 0.7rem; margin-top: 5px; }
+
+  /* ── GALLERY ── */
+  #gallery { background: var(--cream); }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 220px);
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .gallery-item {
+    border-radius: 6px; overflow: hidden; position: relative; cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .gallery-item:hover { transform: scale(1.02); z-index: 2; }
+  .gallery-item:nth-child(1) { grid-column: span 2; }
+  .gallery-item:nth-child(5) { grid-column: span 2; }
+  .g-bg {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 5rem;
+    transition: transform 0.5s;
+  }
+  .gallery-item:hover .g-bg { transform: scale(1.1); }
+  .g-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(28,20,16,0.75) 30%, transparent 70%);
+    opacity: 0; transition: opacity 0.3s;
+    display: flex; align-items: flex-end; padding: 1.2rem;
+  }
+  .gallery-item:hover .g-overlay { opacity: 1; }
+  .g-overlay span { color: white; font-size: 0.85rem; font-weight: 500; }
+  .g-1 .g-bg { background: linear-gradient(135deg, #2D1B69, #1A3A5C); }
+  .g-2 .g-bg { background: linear-gradient(135deg, #5C1A1A, #8B4513); }
+  .g-3 .g-bg { background: linear-gradient(135deg, #1A4A2E, #2D5016); }
+  .g-4 .g-bg { background: linear-gradient(135deg, #4A1A5C, #8B1A8B); }
+  .g-5 .g-bg { background: linear-gradient(135deg, #5C3A1A, #8B6914); }
+  .g-6 .g-bg { background: linear-gradient(135deg, #1A3A5C, #2D5016); }
+
+  /* ── CONTACT ── */
+  #contact { background: white; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 3.5rem; }
+  .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+  .contact-item {
+    display: flex; align-items: flex-start; gap: 1rem;
+    padding: 1.5rem; background: var(--cream);
+    border: 1px solid var(--border); border-radius: 6px;
+    transition: all 0.3s;
+  }
+  .contact-item:hover { border-color: var(--saffron); transform: translateX(4px); }
+  .ci-icon { font-size: 1.8rem; flex-shrink: 0; }
+  .ci-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--saffron); font-weight: 600; margin-bottom: 0.3rem; }
+  .ci-value { color: var(--charcoal); font-size: 0.95rem; line-height: 1.5; }
+  .ci-value a { color: inherit; text-decoration: none; }
+  .ci-value a:hover { color: var(--saffron); }
+  .hours-grid { display: grid; grid-template-columns: auto 1fr; gap: 0.4rem 1.5rem; font-size: 0.9rem; margin-top: 0.3rem; }
+  .hours-grid span:nth-child(odd) { color: var(--warm-gray); }
+  .hours-grid span:nth-child(even) { font-weight: 500; }
+
+  .map-section { border-radius: 8px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.1); }
+  .map-section iframe { display: block; width: 100%; height: 380px; border: 0; }
+  .map-cta { padding: 1.2rem; background: var(--deep-maroon); display: flex; align-items: center; justify-content: space-between; }
+  .map-cta span { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
+  .map-cta a {
+    background: var(--saffron); color: white; text-decoration: none;
+    padding: 0.5rem 1.2rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;
+    transition: background 0.2s;
+  }
+  .map-cta a:hover { background: var(--gold); }
+
+  /* ── CTA BANNER ── */
+  #cta-banner {
+    background: linear-gradient(135deg, var(--saffron) 0%, var(--deep-maroon) 100%);
+    padding: 5rem 2rem; text-align: center; position: relative; overflow: hidden;
+  }
+  #cta-banner::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='white' fill-opacity='0.05'%3E%3Cpath d='M40 0L80 40L40 80L0 40z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  #cta-banner h2 { color: white; position: relative; margin-bottom: 1rem; }
+  #cta-banner p { color: rgba(255,255,255,0.85); position: relative; margin-bottom: 2.5rem; font-size: 1.05rem; }
+  .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; position: relative; }
+  .btn-white {
+    background: white; color: var(--deep-maroon); padding: 0.9rem 2.2rem;
+    text-decoration: none; font-size: 0.9rem; font-weight: 700; border-radius: 3px;
+    transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .btn-white:hover { background: var(--cream); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+  .btn-outline-white {
+    background: transparent; color: white; padding: 0.9rem 2.2rem;
+    text-decoration: none; font-size: 0.9rem; font-weight: 700; border-radius: 3px;
+    transition: all 0.3s; border: 2px solid rgba(255,255,255,0.6);
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .btn-outline-white:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--charcoal); color: rgba(255,255,255,0.7); padding: 4rem 2rem 2rem;
+  }
+  .footer-inner { max-width: 1200px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 3rem; }
+  .footer-brand { }
+  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 700; color: white; margin-bottom: 1rem; }
+  .footer-logo span { color: var(--saffron); }
+  .footer-desc { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem; }
+  .footer-social { display: flex; gap: 0.8rem; }
+  .social-btn {
+    width: 36px; height: 36px; border-radius: 4px;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; font-size: 1rem; transition: all 0.2s;
+    color: white;
+  }
+  .social-btn:hover { background: var(--saffron); border-color: var(--saffron); }
+  .footer-col h4 { color: white; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 1.2rem; font-family: 'Outfit', sans-serif; font-weight: 600; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--saffron); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 1rem; font-size: 0.8rem; }
+  .footer-bottom span { color: rgba(255,255,255,0.4); }
+
+  /* ── FLOATING BUTTONS ── */
+  .float-btns {
+    position: fixed; bottom: 2rem; right: 1.5rem; z-index: 999;
+    display: flex; flex-direction: column; gap: 0.8rem; align-items: flex-end;
+  }
+  .float-btn {
+    display: flex; align-items: center; gap: 0.7rem;
+    padding: 0.8rem 1.2rem; border-radius: 50px;
+    text-decoration: none; font-weight: 600; font-size: 0.85rem;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    white-space: nowrap;
+  }
+  .float-btn-label { overflow: hidden; max-width: 0; transition: max-width 0.4s; }
+  .float-btn:hover .float-btn-label { max-width: 160px; }
+  .float-btn-wa { background: #25D366; color: white; }
+  .float-btn-wa:hover { background: #1fad52; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(37,211,102,0.3); }
+  .float-btn-call { background: var(--deep-maroon); color: white; }
+  .float-btn-call:hover { background: var(--saffron); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(232,116,42,0.3); }
+  .float-icon-lg { font-size: 1.3rem; flex-shrink: 0; }
+
+  /* ── SCROLL ANIMATIONS ── */
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  /* ── MOBILE NAV MENU ── */
+  .mobile-menu {
+    position: fixed; inset: 0; z-index: 998;
+    background: rgba(251,246,238,0.98); backdrop-filter: blur(16px);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 2rem; transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+  }
+  .mobile-menu.open { transform: translateX(0); }
+  .mobile-menu a {
+    font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600;
+    color: var(--charcoal); text-decoration: none; transition: color 0.2s;
+  }
+  .mobile-menu a:hover { color: var(--saffron); }
+  .mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 1.5rem; background: none; border: none; cursor: pointer; color: var(--charcoal); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .collection-grid { grid-template-columns: repeat(2, 1fr); }
+    .collection-card:first-child { grid-row: span 1; aspect-ratio: 3/4; }
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .footer-grid .footer-brand { grid-column: span 2; }
+  }
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.2rem; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-visual { display: none; }
+    .hero-stats { justify-content: space-between; }
+    .collection-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .why-grid { grid-template-columns: 1fr; }
+    .testimonial-grid { grid-template-columns: 1fr; }
+    .about-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
+    .gallery-item:nth-child(1), .gallery-item:nth-child(5) { grid-column: span 1; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-grid .footer-brand { grid-column: 1; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    section { padding: 4rem 1.5rem; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+    .cta-actions { flex-direction: column; align-items: center; }
+    .float-btn { padding: 0.75rem 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobile()">✕</button>
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#collections" onclick="closeMobile()">Collections</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="#testimonials" onclick="closeMobile()">Reviews</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#home" class="nav-logo">Vaibhav <span>Creation</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#collections">Collections</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="openMobile()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">✦ Ahmedabad's Trusted Ethnic Store</div>
+      <h1 class="hero-title">
+        Fashion That<br>Feels Like <em>Home</em>
+      </h1>
+      <p class="hero-tagline">Affordable Ethnic Fashion for Every Occasion — from festive kurtas to everyday ethnic wear, curated for the modern Indian.</p>
+      <div class="hero-actions">
+        <a href="#collections" class="btn-primary">🛍 Explore Collections</a>
+        <a href="tel:+919428107340" class="btn-secondary">📞 Call Now</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">4.3★</span>
+          <span class="stat-label">Google Rating</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">52+</span>
+          <span class="stat-label">Happy Reviews</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Collections</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Years Trust</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-main">
+        <div class="hero-card-badge">New Collection</div>
+        <div class="hero-icon">👘</div>
+        <h3>Festive 2025</h3>
+        <p>Premium ethnic wear for every celebration — weddings, Diwali, Eid & more</p>
+        <div class="hero-tag-list">
+          <span class="hero-tag">Kurtas</span>
+          <span class="hero-tag">Ethnic Wear</span>
+          <span class="hero-tag">Festive</span>
+          <span class="hero-tag">Kids</span>
+          <span class="hero-tag">Women's</span>
+        </div>
+      </div>
+      <div class="hero-float-card">
+        <span class="float-icon">🏪</span>
+        <div class="float-text">
+          <strong>Open Today</strong>
+          <span>10:00 AM – 9:30 PM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections">
+  <div class="section-inner">
+    <div class="collections-header">
+      <div>
+        <p class="section-eyebrow">Our Collections</p>
+        <h2 class="section-title">Curated for<br>Every Occasion</h2>
+        <div class="divider"></div>
+      </div>
+      <p class="section-subtitle">From everyday ethnic wear to festive attire — discover clothing that celebrates Indian tradition at honest prices.</p>
+    </div>
+    <div class="collection-grid">
+      <div class="collection-card cc-1 reveal">
+        <div class="cc-bg">👔</div>
+        <div class="cc-overlay"></div>
+        <div class="cc-info">
+          <p class="cc-tag">Best Seller</p>
+          <h3 class="cc-name">Men's Kurtas</h3>
+          <p class="cc-sub">Classic & contemporary cuts for every man</p>
+        </div>
+      </div>
+      <div class="collection-card cc-2 reveal reveal-delay-1">
+        <div class="cc-bg">🥻</div>
+        <div class="cc-overlay"></div>
+        <div class="cc-info">
+          <p class="cc-tag">Trending</p>
+          <h3 class="cc-name">Women's Ethnic Wear</h3>
+          <p class="cc-sub">Elegant sarees, suits & more</p>
+        </div>
+      </div>
+      <div class="collection-card cc-3 reveal reveal-delay-2">
+        <div class="cc-bg">🎊</div>
+        <div class="cc-overlay"></div>
+        <div class="cc-info">
+          <p class="cc-tag">New Arrivals</p>
+          <h3 class="cc-name">Festive Wear</h3>
+          <p class="cc-sub">Diwali, weddings & celebrations</p>
+        </div>
+      </div>
+      <div class="collection-card cc-4 reveal reveal-delay-1">
+        <div class="cc-bg">👦</div>
+        <div class="cc-overlay"></div>
+        <div class="cc-info">
+          <p class="cc-tag">Adorable</p>
+          <h3 class="cc-name">Kids Wear</h3>
+          <p class="cc-sub">Traditional outfits for little ones</p>
+        </div>
+      </div>
+      <div class="collection-card cc-5 reveal reveal-delay-2">
+        <div class="cc-bg">🧵</div>
+        <div class="cc-overlay"></div>
+        <div class="cc-info">
+          <p class="cc-tag">Everyday</p>
+          <h3 class="cc-name">Men's Fashion</h3>
+          <p class="cc-sub">Modern ethnic for daily wear</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Why Choose Us</p>
+    <h2 class="section-title reveal">The Vaibhav Creation<br>Difference</h2>
+    <div class="divider reveal"></div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">💰</div>
+        <h3>Affordable Pricing</h3>
+        <p>Quality ethnic fashion should be accessible to everyone. We offer the best prices in Ahmedabad without compromising on quality.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">🧶</div>
+        <h3>Premium Fabrics</h3>
+        <p>Every piece in our store uses comfortable, durable materials — soft on the skin, rich in appearance, and built to last.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">✂️</div>
+        <h3>Neat Stitching</h3>
+        <p>Precision in every stitch. Our garments are crafted with attention to detail, ensuring a perfect fit and long-lasting wear.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🌸</div>
+        <h3>Latest Ethnic Fashion</h3>
+        <p>We stay ahead of trends, bringing you the freshest ethnic collections each season — from traditional to fusion styles.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">😊</div>
+        <h3>Friendly Staff</h3>
+        <p>Our helpful team is always ready to guide you to the perfect outfit, making your shopping experience truly delightful.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">🎁</div>
+        <h3>Wide Selection</h3>
+        <p>For men, women, and children — we have something for everyone across all occasions, from daily wear to festive celebrations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="testimonials-header reveal">
+      <p class="section-eyebrow">Customer Reviews</p>
+      <h2 class="section-title" style="color:white">What Our Customers Say</h2>
+      <div class="rating-badge">
+        <span class="stars">★★★★☆</span>
+        <span>4.3 out of 5 on Google · 52 reviews</span>
+      </div>
+    </div>
+    <div class="testimonial-grid">
+      <div class="t-card reveal">
+        <div class="t-quote">"</div>
+        <p class="t-text">Excellent quality fabric, very comfortable and true to size. The stitching is neat and the material feels durable. Totally worth the price.</p>
+        <div class="t-author">
+          <div class="t-avatar">J</div>
+          <div>
+            <div class="t-name">Jeet Dave</div>
+            <div class="t-source">⭐⭐⭐⭐⭐ Google Review</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card reveal reveal-delay-1">
+        <div class="t-quote">"</div>
+        <p class="t-text">All stuff was good collection and rate were best, and staff behaviour was nice. Highly recommend visiting this store for ethnic wear in Ahmedabad.</p>
+        <div class="t-author">
+          <div class="t-avatar">K</div>
+          <div>
+            <div class="t-name">Kamlesh Patel</div>
+            <div class="t-source">⭐⭐⭐⭐⭐ Google Review</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <div class="t-quote">"</div>
+        <p class="t-text">Great range of kurtas and ethnic wear at very reasonable prices. The store is well-organized and the staff helped me find the right fit quickly.</p>
+        <div class="t-author">
+          <div class="t-avatar">R</div>
+          <div>
+            <div class="t-name">Rohit Shah</div>
+            <div class="t-source">⭐⭐⭐⭐ Google Review</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card reveal reveal-delay-1">
+        <div class="t-quote">"</div>
+        <p class="t-text">My family has been shopping here for years. The festive collection is always fresh and the prices are unbeatable. Trusted store for ethnic fashion.</p>
+        <div class="t-author">
+          <div class="t-avatar">P</div>
+          <div>
+            <div class="t-name">Priya Mehta</div>
+            <div class="t-source">⭐⭐⭐⭐⭐ Google Review</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-inner">
+      <div class="about-visual reveal">
+        <div class="about-main-card">
+          <div class="big-icon">🏪</div>
+          <h3>Vaibhav Creation</h3>
+          <p>Your trusted destination for ethnic fashion in the heart of Ahmedabad</p>
+        </div>
+        <div class="about-float">
+          <strong>4.3★</strong>
+          <span>Google Rated</span>
+        </div>
+      </div>
+      <div class="about-content reveal reveal-delay-1">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">Bringing Ethnic<br>Fashion Closer to You</h2>
+        <div class="divider"></div>
+        <p>Vaibhav Creation was founded with one simple belief — that stylish, quality ethnic wear should be affordable and accessible for everyone in Ahmedabad.</p>
+        <p>Nestled at New Vadaj Road near Krishna Nagar, we've built a reputation for offering a wide and carefully curated selection of men's kurtas, women's ethnic wear, festive clothing, and kids' outfits — all at prices that respect your budget.</p>
+        <p>Our team handpicks each collection to ensure the finest fabrics, neat stitching, and true-to-size fits. We take pride in the relationships we've built with our customers, many of whom return season after season for our fresh collections.</p>
+        <ul class="about-list">
+          <li>Trusted by families across Ahmedabad for quality ethnic wear</li>
+          <li>New seasonal collections for men, women, and children</li>
+          <li>In-store shopping, pickup & delivery available</li>
+          <li>Open 7 days a week, 10 AM to 9:30 PM</li>
+          <li>Friendly, knowledgeable staff always ready to help</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom:3rem;">
+      <p class="section-eyebrow reveal" style="justify-content:center;">Our Store</p>
+      <h2 class="section-title reveal">A Glimpse Inside<br>Vaibhav Creation</h2>
+      <div class="divider reveal" style="margin:1.5rem auto;"></div>
+      <p class="section-subtitle reveal" style="margin:0 auto; text-align:center;">Explore our wide collection of ethnic wear and festive clothing in our welcoming store.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item g-1 reveal">
+        <div class="g-bg">👔</div>
+        <div class="g-overlay"><span>Men's Kurta Collection</span></div>
+      </div>
+      <div class="gallery-item g-2 reveal reveal-delay-1">
+        <div class="g-bg">🥻</div>
+        <div class="g-overlay"><span>Women's Ethnic Wear</span></div>
+      </div>
+      <div class="gallery-item g-3 reveal reveal-delay-2">
+        <div class="g-bg">🎊</div>
+        <div class="g-overlay"><span>Festive Collections</span></div>
+      </div>
+      <div class="gallery-item g-4 reveal reveal-delay-1">
+        <div class="g-bg">👦</div>
+        <div class="g-overlay"><span>Kids Ethnic Wear</span></div>
+      </div>
+      <div class="gallery-item g-5 reveal reveal-delay-2">
+        <div class="g-bg">🏪</div>
+        <div class="g-overlay"><span>Store Interior</span></div>
+      </div>
+      <div class="gallery-item g-6 reveal reveal-delay-1">
+        <div class="g-bg">🧵</div>
+        <div class="g-overlay"><span>Premium Fabrics</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section id="cta-banner">
+  <div style="max-width:700px; margin:0 auto;">
+    <h2 class="reveal">Visit Us in Ahmedabad Today</h2>
+    <p class="reveal">Walk into our store at New Vadaj Road and discover your perfect ethnic outfit — or call us to know more about our latest collections.</p>
+    <div class="cta-actions reveal">
+      <a href="https://maps.app.goo.gl/Eg9Xg1HjRFmKX8AU9" class="btn-white" target="_blank">📍 Get Directions</a>
+      <a href="tel:+919428107340" class="btn-outline-white">📞 +91 94281 07340</a>
+      <a href="https://wa.me/919428107340?text=Hi%2C%20I%27m%20interested%20in%20your%20ethnic%20wear%20collection" class="btn-white" target="_blank">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Find Us</p>
+    <h2 class="section-title reveal">Visit Vaibhav Creation</h2>
+    <div class="divider reveal"></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item reveal">
+          <span class="ci-icon">📍</span>
+          <div>
+            <p class="ci-label">Store Address</p>
+            <p class="ci-value">Vegetabel Market Corner, Bus Stop,<br>Near Krishna Nagar, New Vadaj Rd,<br>Ahmedabad, Gujarat 380013, India</p>
+          </div>
+        </div>
+        <div class="contact-item reveal reveal-delay-1">
+          <span class="ci-icon">📞</span>
+          <div>
+            <p class="ci-label">Phone</p>
+            <p class="ci-value"><a href="tel:+919428107340">+91 94281 07340</a></p>
+          </div>
+        </div>
+        <div class="contact-item reveal reveal-delay-2">
+          <span class="ci-icon">💬</span>
+          <div>
+            <p class="ci-label">WhatsApp</p>
+            <p class="ci-value"><a href="https://wa.me/919428107340?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20collections" target="_blank">+91 94281 07340 – Chat with us</a></p>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <span class="ci-icon">🕐</span>
+          <div>
+            <p class="ci-label">Business Hours</p>
+            <div class="hours-grid">
+              <span>Monday – Sunday</span><span>10:00 AM – 9:30 PM</span>
+              <span>Delivery</span><span>Available</span>
+              <span>In-Store Pickup</span><span>Available</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item reveal reveal-delay-1">
+          <span class="ci-icon">⭐</span>
+          <div>
+            <p class="ci-label">Google Rating</p>
+            <p class="ci-value">4.3 ★★★★☆ from 52 Reviews</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="map-section">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.2!2d72.57!3d23.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA0JzEyLjAiTiA3MsKwMzQnMTIuMCJF!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Vaibhav Creation Location Map">
+          </iframe>
+          <div class="map-cta">
+            <span>📍 New Vadaj Rd, Ahmedabad</span>
+            <a href="https://maps.app.goo.gl/Eg9Xg1HjRFmKX8AU9" target="_blank">Get Directions →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Vaibhav <span>Creation</span></div>
+        <p class="footer-desc">Ahmedabad's trusted ethnic wear store. Quality kurtas, festive wear & ethnic fashion for men, women & kids — at affordable prices.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/919428107340" class="social-btn" target="_blank" title="WhatsApp">💬</a>
+          <a href="tel:+919428107340" class="social-btn" title="Call">📞</a>
+          <a href="https://maps.app.goo.gl/Eg9Xg1HjRFmKX8AU9" class="social-btn" target="_blank" title="Maps">📍</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul class="footer-links">
+          <li><a href="#collections">Men's Kurtas</a></li>
+          <li><a href="#collections">Women's Ethnic Wear</a></li>
+          <li><a href="#collections">Festive Wear</a></li>
+          <li><a href="#collections">Kids Wear</a></li>
+          <li><a href="#collections">Men's Fashion</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="tel:+919428107340">+91 94281 07340</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Vaibhav Creation. Ahmedabad, Gujarat, India.</span>
+      <span>Clothing Store · Kurta Shop · Ethnic Wear · Ahmedabad</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-btns">
+  <a href="https://wa.me/919428107340?text=Hi%2C%20I%27m%20interested%20in%20your%20ethnic%20wear%20collection" class="float-btn float-btn-wa" target="_blank" title="WhatsApp">
+    <span class="float-icon-lg">💬</span>
+    <span class="float-btn-label">WhatsApp Us</span>
+  </a>
+  <a href="tel:+919428107340" class="float-btn float-btn-call" title="Call Now">
+    <span class="float-icon-lg">📞</span>
+    <span class="float-btn-label">Call Now</span>
+  </a>
+</div>
+
+<script>
+  // NAV SCROLL
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // MOBILE MENU
+  function openMobile() { document.getElementById('mobileMenu').classList.add('open'); }
+  function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+  // SCROLL REVEAL
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // SMOOTH ACTIVE NAV
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+    navLinks.forEach(l => {
+      l.style.color = l.getAttribute('href') === '#' + current ? 'var(--saffron)' : '';
+    });
+  });
+</script>
+</body>
+</html>
